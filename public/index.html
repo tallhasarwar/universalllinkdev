@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reco Dev...</title>
+  <script>
+    // Function to redirect to App Store keeping query params
+    function redirectToAppStore() {
+      const appStoreURL = "https://apps.apple.com/app/id1673448676";
+
+      // Get current query string
+      const query = window.location.search;
+
+      // Build the full URL
+      const fullURL = appStoreURL + query;
+
+      // Redirect to App Store
+      window.location.replace(fullURL);
+    }
+
+    redirectToAppStore();
+  </script>
+</head>
+<body>
+  <p>Redirecting to the Reco Dev...</p>
+</body>
+</html>
